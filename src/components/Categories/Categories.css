@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+}
+
+.category-container {
+    border-bottom: solid .4px lightgray;
+    padding-bottom: 30px;
+}
+
+.category-btn {
+    color: #5a6175;
+    font-weight: 600;
+    background-color: #f7ecdb;
+    border-radius: .25rem;
+    min-height: 75px;
+}

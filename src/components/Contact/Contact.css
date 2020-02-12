@@ -1,0 +1,19 @@
+.text-left {
+    text-align: left;
+}
+
+.text-italic {
+    font-style: italic;
+    color: grey;
+}
+
+#contact_container {
+    border: 1px solid grey;
+    box-shadow: 1px 1px 5px #555;
+    padding: 100px;
+    border-radius: .25rem;
+}
+
+#btn_contact {
+    text-align: right;
+}

@@ -1,0 +1,9 @@
+.product-name {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.product-price {
+    color: grey;
+    font-weight: bold;
+}
