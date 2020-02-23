@@ -3,11 +3,13 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 // Custom components
 import ProductInformations from '../../components/ProductInformations/ProductInformations';
+import ProductDetailedInfo from '../../components/ProductInformations/ProductDetailedInfo';
 
 const ProductDetails = () => {
     return (
-        <Container fluid style={{border: "1px solid black"}} className="mt-5">
+        <Container className="mt-5">
             <ProductInformations />
+            <ProductDetailedInfo />
         </Container>
     );
 }

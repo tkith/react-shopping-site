@@ -16,34 +16,70 @@ import AmericanExpressIcon from '../../assets/icon/Payment/Light/22.png';
 
 const Footer = () => {
     return (
-        <Container fluid className="mt-5" id="footer">
+        <Container fluid className="mt-5">
             <Row id="main_footer">
-                <Col className="mt-auto mb-auto"><h4>SHaing</h4></Col>
-                <Col className="mt-auto mb-auto">
-                    <Row className="ml-auto mr-auto">
-                        <Col>© 2019 By Haing</Col>
-                    </Row>
-                    <Row className="ml-auto mr-auto">
-                        <Col><a href="https://dribbble.com/imshuvo97">Design from Afsar Hossen</a></Col>
-                    </Row>
+                {/* Logo/Site name */}
+                <Col md={4}>
+                    <Row className="justify-content-center"><h2>SHaing</h2></Row>
                 </Col>
-                <Col>
-                    <Row className="ml-auto mr-auto">
-                        <Col lg={3}><Image src={VisaIcon} /></Col>
-                        <Col lg={3}><Image src={MastercardIcon} /></Col>
-                        <Col lg={3}><Image src={PaypalIcon} /></Col>
-                        <Col lg={3}><Image src={AmericanExpressIcon} /></Col>
+
+                {/* Informations */}
+                <Col md={4}>
+                    <Row className="justify-content-md-center">© 2019 By Haing</Row>
+                    <Row className="justify-content-md-center"><a href="https://dribbble.com/imshuvo97">Design from Afsar Hossen</a></Row>
+                </Col>
+
+                {/* Payment methods */}
+                <Col md={4}>
+                    <Row>
+                        <Col xs={5} md={3}>
+                            <Row className="justify-content-center">
+                                <Image className="payment-img" src={VisaIcon} />
+                            </Row>
+                        </Col>
+                        <Col xs={5} md={3}>
+                            <Row className="justify-content-center">
+                                <Image className="payment-img" src={MastercardIcon} />
+                            </Row>
+                        </Col>
+                        <Col xs={5} md={3}>
+                            <Row className="justify-content-center">
+                                <Image className="payment-img" src={PaypalIcon} />
+                            </Row>
+                        </Col>
+                        <Col xs={5} md={3}>
+                            <Row className="justify-content-center">
+                                <Image className="payment-img" src={AmericanExpressIcon} />
+                            </Row>
+                        </Col>
                     </Row>
                 </Col>
             </Row>
-            <Container className="mt-4">
-                <Row id="social_network_footer">
-                    <Col><InstagramIcon /></Col>
-                    <Col><FacebookIcon /></Col>
-                    <Col><TwitterIcon /></Col>
-                    <Col><LinkedInIcon /></Col>
-                </Row>
-            </Container>
+            
+            {/* Social network */}
+            <Row className="m-4 justify-content-center">
+                <Col xs={1}>
+                    <Row className="justify-content-center">
+                        <InstagramIcon />
+                    </Row>
+                </Col>
+
+                <Col xs={1}>
+                    <Row className="justify-content-center">
+                        <FacebookIcon />
+                    </Row>
+                </Col>
+                <Col xs={1}>
+                    <Row className="justify-content-center">
+                        <TwitterIcon />
+                    </Row>
+                </Col>
+                <Col xs={1}>
+                    <Row className="justify-content-center">
+                        <LinkedInIcon />
+                    </Row>
+                </Col>
+            </Row>
         </Container>
     );
 }

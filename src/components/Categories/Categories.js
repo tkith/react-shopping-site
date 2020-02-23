@@ -14,18 +14,18 @@ import './Categories.css';
 
 const Categories = () => {
     return (
-        <Container fluid className="ml-3">
+        <Container fluid>
             <Row>
                 <h1>Products Categories</h1>
             </Row>
 
-            <Row className="category-container mt-4 mr-4">
-                <CategoryButton icon={<PhotoCameraOutlinedIcon />} title="Consumer Electronics" />
-                <CategoryButton icon={<LocalHospitalOutlinedIcon />} title="Health & Beauty" />
-                <CategoryButton icon={<HomeOutlinedIcon />} title="Home & Garden" />
-                <CategoryButton icon={<WatchOutlinedIcon />} title="Accessories" />
-                <CategoryButton icon={<PeopleAltOutlinedIcon />} title="Women's Clothing" />
-                <CategoryButton icon={<PeopleAltOutlinedIcon />} title="Men's Clothing" />
+            <Row className="category-container mt-4 justify-content-center">
+                <CategoryButton icon={<PhotoCameraOutlinedIcon />} title="Consumer Electronics" bgColor="#C78283" textColor="white" />
+                <CategoryButton icon={<LocalHospitalOutlinedIcon />} title="Health & Beauty" bgColor="#F4EBE8" />
+                <CategoryButton icon={<HomeOutlinedIcon />} title="Home & Garden" bgColor="#CCDBDC" />
+                <CategoryButton icon={<WatchOutlinedIcon />} title="Accessories" bgColor="#84C0C6" />
+                <CategoryButton icon={<PeopleAltOutlinedIcon />} title="Women's Clothing" bgColor="#E0ACD5" textColor="white" />
+                <CategoryButton icon={<PeopleAltOutlinedIcon />} title="Men's Clothing" bgColor="steelblue" textColor="white" />
             </Row>
         </Container>
     );

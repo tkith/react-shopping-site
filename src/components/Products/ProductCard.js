@@ -8,11 +8,13 @@ const ProductCard = ({img, name, price}) => {
     return (
         <Container>
             <Row>
-                <Image width="200px" src={img} rounded />
+                <Image width="100%" src={img} rounded />
             </Row>
+
             <Row className="mt-3 product-name">
                 {name}
             </Row>
+            
             <Row className="product-price">
                 {price}€
             </Row>

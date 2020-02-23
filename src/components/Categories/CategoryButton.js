@@ -3,14 +3,21 @@ import { Container, Row, Col } from 'react-bootstrap';
 // CSS
 import './Categories.css';
 
-const CategoryButton = ({icon, title}) => {
+const CategoryButton = ({icon, title, bgColor, textColor}) => {
+    // Used to set the button style
+    const buttonStyle = {
+        backgroundColor: bgColor,
+        color: textColor
+    };
+
     return (
         <Col>
             <Container>
-                <Row className="category-btn">
+                <Row className="category-btn" style={buttonStyle}>
                     <Col sm={6} md={6} lg={1} xl={3} className="mt-auto mb-auto">
                         {icon}
                     </Col>
+                    
                     <Col sm={6} md={6} lg={11} xl={9} className="mt-auto mb-auto">
                         {title}
                     </Col>
